@@ -29,13 +29,18 @@ const Navbar = () => (
               src={websiteLogoImageURL}
               alt="website logo"
             />
-            <ul className="nav-menu">
-              <li className="nav-menu-item">
-                <Link to="/" className={`nav-link ${navItemClassName}`}>
-                  About
-                </Link>
-              </li>
-            </ul>
+           <ul className="nav-menu">
+    <li className="nav-menu-item">
+       <Link to="/" className={`nav-link ${navItemClassName}`}>
+            Home
+        </Link>
+    </li>
+        <li className="nav-menu-item">
+           <Link to="/about" className={`nav-link ${navItemClassName}`}>
+                About
+          </Link>
+       </li>
+</ul>
             <button
               data-testid="theme"
               className="theme-button"
